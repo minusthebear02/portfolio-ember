@@ -77,10 +77,10 @@
     font-family: 'Lobster';
     font-size: 40px;
     color: white;
-    margin: 16px 0 0 10px;
+    margin: auto 0 0 10px;
     background: none;
     border: none;
-    padding: 0;
+    padding: 15px;
   }
   
   #home-link:hover {
@@ -88,16 +88,9 @@
     transition:.4s;
   }
   
-  #home-link:focus {
-    outline: none;
-  }
-  
   .hero-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    margin-top: 50px;
+    margin: 50px auto 20px;
   }
   
   .hero-header {
@@ -111,20 +104,11 @@
     .hero-header {
       font-size: 100px;
     }
-  
-    #home-link {
-      padding: 0;
-      margin: auto;
-    }
   }
   
   @media (min-width: 754px) {
     .hero-header{
       font-size: 140px;
-    }
-  
-    #home-link {
-      padding: 15px;
     }
   }
   
@@ -136,10 +120,8 @@
   
   .hero-title h3 {
     font-family: 'Raleway';
-    font-weight: bolder;
     font-size: 30px;
     color: #686868;
-    margin-top: 20px;
   }
   
   .hero-skills {
@@ -224,13 +206,13 @@
     margin-top: 40px;
   }
   
-  #projects .btn {
+  .btn {
     background-color: #686868;
     color: white;
     border: none;
   }
   
-  #projects .btn:hover {
+  .btn:hover {
     background-color: #2471B4;
     transition: .4s;
   }
@@ -254,18 +236,13 @@
   }
   
   .resume-img {
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     text-align: center;
   }
   
   .resume-img a {
     max-width: 100%;
     max-height: 100%;
-  }
-  
-  .resume-img img {
-    background-color: white;
   }
   
   #contact {
@@ -288,16 +265,6 @@
   #contact .form-control:focus {
     border: solid 2px #2471B4;
     box-shadow: none;
-  }
-  
-  #contact .btn {
-    background-color: #686868;
-    border: none;
-  }
-  
-  #contact .btn:hover {
-    background-color: #2471B4;
-    transition: .4s;
   }
   
   /* Wobble Vertical */
@@ -354,7 +321,6 @@
     }
   }
   .hvr-wobble-vertical {
-    display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
