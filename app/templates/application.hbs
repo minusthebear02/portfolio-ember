@@ -1,29 +1,8 @@
-
-    
-<!--Navbar-->
-  <nav class="nav navbar-default navbar-fixed-top navbar-transparent">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle navbar-toller-right toggler" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        {{#link-to 'home' class="navbar-brand hvr-wobble-vertical" id="home-link"}}Mark Froehlich{{/link-to}}
-      </div>
-
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right ml">
-          <li>{{#link-to 'about' class="navbar-button hvr-wobble-vertical"}}About{{/link-to}}</li>
-          <li>{{#link-to 'projects' class="navbar-button hvr-wobble-vertical"}}Projects{{/link-to}}</li>
-          <li>{{#link-to 'blog' class="navbar-button hvr-wobble-vertical"}}Blog{{/link-to}}</li>
-          <li>{{#link-to 'resume' class="navbar-button hvr-wobble-vertical"}}Resume{{/link-to}}</li>
-          <li>{{#link-to 'contact' class="navbar-button hvr-wobble-vertical"}}Contact{{/link-to}}</li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+{{#if home}}
+  {{navbar-index}}
+{{else}}
+  {{navbar-global}}
+{{/if}}
 
 {{liquid-outlet}}
 
