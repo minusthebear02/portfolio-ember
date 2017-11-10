@@ -79,7 +79,7 @@
 
 #home-link {
   font-family: 'Lobster';
-  font-size: 40px;
+  font-size: 37px;
   color: white;
   margin: auto 0 0 10px;
   background: none;
@@ -89,7 +89,7 @@
 
 #home-link:hover {
   opacity: .5;
-  transition:.4s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 /* Home Section */
@@ -172,8 +172,7 @@
   }
     
   .icon {
-        height: 95px;
-        width: 95px;
+        margin: auto 15px;
         display: inline-block;
   }
     
@@ -191,6 +190,21 @@
     color: white;
     width: 100%;
     padding-bottom: 100px;
+
+  .section-heading {
+    margin: 100px auto 30px;
+    text-align: center;
+  }
+
+  .my-face {
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 300px;
+  }
+
+  h2 {
+    margin-top: 30px;
+  }
 
   h3 {
     font-family: 'Lobster';
